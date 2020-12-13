@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>AC.Interop.SWPDM</id>
+    <version>28.4</version>
+    <title>SOLIDWORKS PDM API Interop</title>
+    <authors>Alberto Casetta</authors>
+    <owners>acasetta</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license>
+    <icon>images\swpdm.png</icon>
+    <projectUrl>https://help.solidworks.com/2020/English/api/epdmapi/Welcome-epdmapi.htm</projectUrl>
+    <description>SOLIDWORKS PDM API PIAs</description>
+    <releaseNotes>First Release</releaseNotes>
+    <copyright>Copyright 2020 Solidworks</copyright>
+    <tags>solidworks pdm swpdm interop</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src=".\lib\EPDM.Interop.epdm.dll" target="lib\net40" />
+    <file src=".\lib\EPDM.Interop.EPDMResultCode.dll" target="lib\net40" />
+    <file src=".\tools\install.ps1" target="tools" />
+    <file src=".\license\LICENSE.txt" />
+    <file src=".\images\swpdm.png" target="images" />
+  </files>
+</package>
