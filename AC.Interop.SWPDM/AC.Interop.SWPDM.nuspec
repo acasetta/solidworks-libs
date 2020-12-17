@@ -2,17 +2,17 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>AC.Interop.SWPDM</id>
-    <version>28.4</version>
+    <version>29.1</version>
     <title>SOLIDWORKS PDM API Interop</title>
     <authors>Alberto Casetta</authors>
     <owners>acasetta</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="file">LICENSE.txt</license>
     <icon>images\swpdm.png</icon>
-    <projectUrl>https://help.solidworks.com/2020/English/api/epdmapi/Welcome-epdmapi.htm</projectUrl>
+    <projectUrl>https://help.solidworks.com/2021/English/api/epdmapi/Welcome-epdmapi.htm</projectUrl>
     <description>SOLIDWORKS PDM API PIAs</description>
-    <releaseNotes>First Release</releaseNotes>
-    <copyright>Copyright 2020 Solidworks</copyright>
+    <releaseNotes>Assemblies released with 2021 SP1</releaseNotes>
+    <copyright>Copyright 2021 Solidworks</copyright>
     <tags>solidworks pdm swpdm interop</tags>
     <dependencies>
       <group targetFramework=".NETFramework4.0" />
