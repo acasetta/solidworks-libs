@@ -1,0 +1,20 @@
+name: release
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.0.5
+    - name: Pack Solidworks 
+      run: nuget pack AC.Interop.Solidworks/AC.Interop.Solidworks.nuspec
+    - name: Pack Solidworks PDM
+      run: nuget pack AC.Interop.SWPDM/AC.Interop.SWPDM.nuspec
+    - name: Pack Solidworks Document Manager
+      run: nuget pack AC.Interop.SwDocumentMgr/AC.Interop.SwDocumentMgr.nuspec
+    - name: Push Nuget
+      run: nuget push **\*.nupkg -src https://api.nuget.org/v3/index.json ${{secrets.NUGET}} -SkipDuplicate
